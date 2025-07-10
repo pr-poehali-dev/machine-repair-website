@@ -150,7 +150,7 @@ const Index = () => {
             <div className="relative">
               <div className="rounded-lg overflow-hidden shadow-2xl">
                 <img
-                  src="/img/c21c8e07-eef3-43e3-b638-b5e9acacd919.jpg"
+                  src="/img/1aa4091a-39dd-4717-9045-7231fa512fc5.jpg"
                   alt="Современное промышленное оборудование"
                   className="w-full h-64 object-cover"
                 />
@@ -234,23 +234,92 @@ const Index = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {cases.map((caseItem, index) => (
-              <Card
-                key={index}
-                className="bg-white hover:shadow-lg transition-shadow"
-              >
-                <CardHeader>
-                  <CardTitle className="text-lg">{caseItem.title}</CardTitle>
-                  <CardDescription>{caseItem.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center space-x-2 text-green-600">
-                    <Icon name="TrendingUp" size={16} />
-                    <span className="font-semibold">{caseItem.result}</span>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            <Card className="bg-white hover:shadow-lg transition-shadow">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/img/77514099-9e2f-48fd-8436-5594399435fd.jpg"
+                  alt="Модернизация фрезерного станка"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-2 right-2">
+                  <Badge className="bg-green-500">Завершен</Badge>
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle className="text-lg">
+                  Модернизация токарного станка 1К62
+                </CardTitle>
+                <CardDescription>
+                  Установка ЧПУ системы и повышение точности обработки
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center space-x-2 text-green-600">
+                  <Icon name="TrendingUp" size={16} />
+                  <span className="font-semibold">
+                    Увеличение производительности на 40%
+                  </span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white hover:shadow-lg transition-shadow">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/img/7701d719-6738-4c39-ad43-31e8fa557b85.jpg"
+                  alt="Ремонт станка специалистами"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-2 right-2">
+                  <Badge className="bg-green-500">Завершен</Badge>
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle className="text-lg">
+                  Капитальный ремонт фрезерного станка
+                </CardTitle>
+                <CardDescription>
+                  Восстановление направляющих и шпиндельного узла
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center space-x-2 text-green-600">
+                  <Icon name="TrendingUp" size={16} />
+                  <span className="font-semibold">
+                    Продление срока службы на 15 лет
+                  </span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white hover:shadow-lg transition-shadow">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/img/1aa4091a-39dd-4717-9045-7231fa512fc5.jpg"
+                  alt="Модернизированный станок"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-2 right-2">
+                  <Badge className="bg-green-500">Завершен</Badge>
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle className="text-lg">
+                  Модернизация листогибочного пресса
+                </CardTitle>
+                <CardDescription>
+                  Установка новой системы управления и датчиков
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center space-x-2 text-green-600">
+                  <Icon name="TrendingUp" size={16} />
+                  <span className="font-semibold">
+                    Повышение точности гибки в 3 раза
+                  </span>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
